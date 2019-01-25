@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="/lib/skyroute.css"/>
+    <style>*{border:none;box-sizing:border-box}*:focus{outline:none}body{background:rgb(255,255,255);font-family:'Raleway',sans-serif;color:rgb(139,139,139);text-align:center}section{padding:20px;font-family:'Source Sans Pro',sans-serif; max-width: 650px; margin: 0 auto;}p{line-height:25px;margin-bottom:30px;margin-top:10px}@keyframes shadow{0%{box-shadow:0 2px 3px 0 hsla(0,0%,58%,.2)}100%{box-shadow:0 3px 4px 0 hsla(0,0%,49%,.2)}}img{width:200px;box-shadow:0 4px 8px 0 hsla(0,0%,58%,.2);border-radius:20px;margin-top:30px}header{text-align:center;padding:20px;font-size:180%;box-shadow:0 4px 0 0 hsla(0,0%,86%,.2)}#logo{display:block;margin:0 auto;width:140px;box-shadow:0 4px 6px 0 hsla(0,0%,58%,.2);border-radius:50%;animation:shadow 1s ease-in 0s infinite alternate;margin-top:20px;margin-bottom:40px}button{display:block;margin:0 auto;padding:12px;margin-top:20px;border-radius:30px;width:150px}#types{text-align:left}a{display:block;text-decoration:none;margin-top:20px;color:rgb(194,194,194)}</style>
+</head>
+
+<body>
+    <header>LeafApp</header>
+
+    <!-- Initial Route -->
+    <section id="home" class="irt">
+        <img src="/assets/leaf.jpg" id="logo">
+        <p>A leaf is an organ of a vascular plant and is the principal lateral appendage of the stem. The leaves and
+            stem together form the shoot. Leaves are collectively referred to as foliage</p>
+        
+        <!-- soft navigation (preffered) -->
+        <button onclick="nav('types')">Types of leaf</button>
+        <button onclick="nav('gallery')">Gallery</button>
+        
+        <!-- hard navigation (must be used as a backup) -->
+        <a href="/about">About</a>
+    
+    </section>
+
+    <!-- route -->
+    <section id="types" class="rt">
+        <p>The type of leaf is usually characteristic of a species (monomorphic), although some species produce more
+            than one type of leaf. Some basic types of leaf are</p>
+        <b>Fern</b>
+        <p>A fern is a member of a group of vascular plants that reproduce via spores and have neither seeds nor
+            flowers. They differ from mosses by being vascular, i.e., having specialized tissues that conduct water and
+            nutrients</p>
+        <b>Conifers</b>
+        <p>Conifers are a division of vascular land plants containing a single extant class, Pinopsida. They are
+            gymnosperms, cone-bearing seed plants. All extant conifers are perennial woody plants with secondary
+            growth. The great majority are trees, though a few are shrubs. Examples include cedars, Douglas firs, etc.</p>
+        <b>angiospermae</b>
+        <p>Angiospermae or Magnoliophyta, are the most diverse group of land plants, with 416 families, approximately
+            13,164 known genera and c. 369,000 known species. Like gymnosperms, angiosperms are seed-producing plants.</p>
+    </section>
+
+    <section id="gallery" class="rt">
+
+        <img src="/assets/fern.jpg">
+        <img src="/assets/conifer.jpg">
+        <img src="/assets/angiosperm.jpg">
+
+
+    </section>
+
+    <section id="about" class="rt">
+        <br><br>
+        <p>Example app to demonstrate <a href="https://aakashpandey.github.io/SkyRoutes" style="margin: 0;">SkyRoutes</a>
+        <br>Content by Wikipedia
+    </section>
+
+</body>
+
+<script src="/sw.js"></script>
+<script src="/lib/skyroute.js"></script>
+
+<script>
+    
+    // Exposed function for handling route dependent events 
+    var pathEvents = (pt) => {
+        console.log("pathEvent fired:", pt);
+    }
+
+</script>
+
+</html>
