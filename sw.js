@@ -1,4 +1,6 @@
-const chng = `Tinker with this string in order to push updates to your app.`;
+const chng = `
+  Tinker with this string in order to push updates to your app.
+`;
 
 const vn = "version-s1";
 
