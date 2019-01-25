@@ -1,13 +1,15 @@
-const chng = `
-  Tinker with this string in order to push updates to your app.
-`;
+const chng = ` Tinker with this string in order to push updates to your app. `;
 
 const vn = "version-s1";
 
 var appCash = [
     '/index.html',
     '/lib/skyroute.css',
-    '/lib/skyroute.js'
+    '/lib/skyroute.js',
+    '/assets/leaf.jpg',
+    '/assets/conifer.jpg',
+    '/assets/angiosperm.jpg',
+    '/assets/fern.jpg'
 ];
 
 self.addEventListener('install', (e) => {
