@@ -1,6 +1,6 @@
 const chng = ` Tinker with this string in order to push updates to your app. `;
 
-const vn = "version-s1";
+const vn = "version-pre1";
 
 var appCash = [
     '/index.html',
